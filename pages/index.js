@@ -13,9 +13,9 @@ export default function Home({ posts }) {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
-          {posts.map((post) => {
+          {posts.map((post, index) => {
             return (
-              <PostCard post={post.node} key={post.title} />
+              <PostCard post={post.node} key={index} />
             )
           })}
         </div>
